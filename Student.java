@@ -7,7 +7,11 @@ public class Student {
   int year;
   
   public Student (String firstName, String lastName, int registration, int grade, int year) {
-	  
+	  this.firstName= firstName;
+	  this.lastName = lastName;
+	  this.registration = registration;
+	  this.grade = grade;
+	  this.year = year;
   }//Constructor 1
   
   public Student (int registration, int grade, int year) {
@@ -19,7 +23,7 @@ public class Student {
   }//Constructor 3
   
   public void printFullName(){
-      System.out.println(firstName + lastName);
+      System.out.println(firstName + " "+ lastName);
    }//PrintFullName
 
    public boolean isApproved(){
@@ -34,5 +38,6 @@ public class Student {
 	   }//if
        
        return year;
+    
    }//ChangeYear
 }// class Student
