@@ -5,17 +5,34 @@ public class Student {
   int registration;
   int grade;
   int year;
+  
+  public Student (String firstName, String lastName) {
+	  
+  }//Constructor 1
+  
+  public Student (int registration, int grade, int year) {
+	  
+  }//Constructor 2
+  
+  public Student(int registration) {
+	  
+  }//Constructor 3
+  
   public void printFullName(){
-      //TODO implement
-   }
+      System.out.println(firstName + lastName);
+   }//PrintFullName
 
-   public void isApproved(){
-       //TODO implement: should return true if grade >= 60
-   }
+   public boolean isApproved(){
+	 return grade >=60;
+     
+   }//isAproved
 
    public int changeYearIfApproved(){
-       //TODO implement: the student should advance to the next year if he/she grade is >= 60
-       // Make year = year + 1, and print "Congragulations" if the student has been approved
-       return 0;
-   }
+	   if (isApproved()) {
+		   year = year +1;
+		   System.out.println("Congratulations");
+	   }//if
+       
+       return year;
+   }//ChangeYear
 }// class Student
