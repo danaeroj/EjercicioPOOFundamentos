@@ -8,16 +8,16 @@ public class Courses {
    
    public void enroll(Student student){
 	   students.add(student);
-   }
+   }//enroll
 
 	   public void unEnroll(Student student){
 	       students.remove(student);
-	   }
+	   }//unEnroll
 
 	   public int countStudents(){
 	       
 	       return students.size();
-	   }
+	   }//countStudents
 	   
 	   public int bestGrade(){
 		   int n= 0;
@@ -27,5 +27,9 @@ public class Courses {
 			}
 		}
 	       return n;
-	   }
+	   }//bestGrade
+	   
+    public void enroll(Student[] students){
+		      
+	 }   
 }//classCourses

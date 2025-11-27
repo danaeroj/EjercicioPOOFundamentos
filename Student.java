@@ -6,7 +6,7 @@ public class Student {
   int grade;
   int year;
   
-  public Student (String firstName, String lastName) {
+  public Student (String firstName, String lastName, int registration, int grade, int year) {
 	  
   }//Constructor 1
   
