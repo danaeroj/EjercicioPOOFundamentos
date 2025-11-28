@@ -29,7 +29,9 @@ public class Courses {
 	       return n;
 	   }//bestGrade
 	   
-    public void enroll(Student[] students){
-		      
+    public void enroll(Student[] studentsArray){
+		      for (Student student : studentsArray) {
+		    	  students.add(student);
+			}
 	 }   
 }//classCourses

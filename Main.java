@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Main {
 
@@ -27,9 +28,21 @@ public class Main {
 	System.out.println("Estudiantes inscritos: "+ curso1.countStudents());
 	System.out.println("Mejor calificación: "+ curso1.bestGrade());
 	
+	Student[] studentsArray = new Student[3];
+	studentsArray[0]=n1;
+	studentsArray[1]=n2;
+	studentsArray[2]=n3;
 	
+	Courses curso2 = new Courses();
+	curso2.courseName="Computo";
+	curso2.professorName="Dr. Chapatin";
+	curso2.year =2025;
 	
+	curso2.enroll(studentsArray);
 	
+	System.out.println("Estudiantes inscritos: "+ curso2.countStudents());
+	System.out.println("Mejor calificación: "+ curso2.bestGrade());
+
 	}//main
 
 }//ClassMain
